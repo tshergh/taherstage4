@@ -1218,7 +1218,7 @@ def videonote(client: pyrogram.client.Client, message: pyrogram.types.messages_a
     with open(f'{message.from_user.id}.json', 'wb') as handle:
         pickle.dump(message, handle)
     app.send_message(message.chat.id,
-                f'__Detected Extension:__ **MP4** 📹 / 🔊\n__Now send extension to Convert to...__\n\n--**Available formats**-- \n\n__{VA_TEXT}__\n\n{message.from_user.mention} __choose or click /cancel to Cancel or use /rename  to  Rename__',
+                f'__Detected Extension:__ **MP4** 📹 / 🔊\n__Now send extension to Convert to...__\n\n--**Available formats**-- \n\n__{VA_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
                 reply_markup=VAboard, reply_to_message_id=message.id)
 
 
@@ -1230,7 +1230,7 @@ def audio(client: pyrogram.client.Client, message: pyrogram.types.messages_and_m
             pickle.dump(message, handle)
         dext = message.audio.file_name.split(".")[-1].upper()
         app.send_message(message.chat.id,
-                         f'__Detected Extension:__ **{dext}** 📹 / 🔊\n__Now send extension to Convert to...__\n\n--**Available formats**-- \n\n__{VA_TEXT}__\n\n{message.from_user.mention} __choose or click /cancel to Cancel or use /rename  to  Rename__',
+                         f'__Detected Extension:__ **{dext}** 📹 / 🔊\n__Now send extension to Convert to...__\n\n--**Available formats**-- \n\n__{VA_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
                          reply_markup=VAboard, reply_to_message_id=message.id)
     else:
         app.send_message(message.chat.id, f'--**Available formats**--:\n\n**VIDEOS/AUDIOS** 📹 / 🔊 \n__{VIDAUD}__',
@@ -1243,7 +1243,7 @@ def voice(client: pyrogram.client.Client, message: pyrogram.types.messages_and_m
     with open(f'{message.from_user.id}.json', 'wb') as handle:
         pickle.dump(message, handle)
     app.send_message(message.chat.id,
-                f'__Detected Extension:__ **OGG** 📹 / 🔊\n__Now send extension to Convert to...__\n\n--**Available formats**-- \n\n__{VA_TEXT}__\n\n{message.from_user.mention} __choose or click /cancel to Cancel or use /rename  to  Rename__',
+                f'__Detected Extension(اكتشاف امتداد):__ **OGG** 📹 / 🔊\n__Now send extension to Convert to...__\n\n--**Available formats**-- \n\n__{VA_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
                 reply_markup=VAboard, reply_to_message_id=message.id)
 
 
@@ -1253,7 +1253,7 @@ def photo(client: pyrogram.client.Client, message: pyrogram.types.messages_and_m
     with open(f'{message.from_user.id}.json', 'wb') as handle:
         pickle.dump(message, handle)
     app.send_message(message.chat.id,
-                     f'__Detected Extension:__ **JPG** 📷\n__Now send extension to Convert to...__\n\n--**Available formats**-- \n\n__{IMG_TEXT}__\n\n**SPECIAL** 🎁\n__Colorize, Positive, Upscale & Scan__\n\n{message.from_user.mention} __choose or click /cancel to Cancel or use /rename  to  Rename__',
+                     f'__Detected Extension(اكتشاف امتداد):__ **JPG** 📷\n__Now send extension to Convert to(الآن أرسل التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{IMG_TEXT}__\n\n**SPECIAL(خاص)** 🎁\n__Colorize, Positive, Upscale & Scan(تلوين ، إيجابي ، راقي ، مسح ضوئي)__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
                      reply_markup=IMGboard, reply_to_message_id=message.id)
 
 
@@ -1264,11 +1264,11 @@ def sticker(client: pyrogram.client.Client, message: pyrogram.types.messages_and
             pickle.dump(message, handle)
     if not message.sticker.is_animated and not message.sticker.is_video:
         app.send_message(message.chat.id,
-                     f'__Detected Extension:__ **WEBP** 📷\n__Now send extension to Convert to...__\n\n--**Available formats**-- \n\n__{IMG_TEXT}__\n\n**SPECIAL** 🎁\n__Colorize, Positive, Upscale & Scan__\n\n{message.from_user.mention} __choose or click /cancel to Cancel or use /rename  to  Rename__',
+                     f'__Detected Extension(اكتشاف امتداد):__ **WEBP** 📷\n__Now send extension to Convert to(الآن أرسل التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{IMG_TEXT}__\n\n**SPECIAL(خاص)** 🎁\n__Colorize, Positive, Upscale & Scan(تلوين ، إيجابي ، راقي ، مسح ضوئي)__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
                      reply_markup=IMGboard, reply_to_message_id=message.id)
     else:
         app.send_message(message.chat.id,
-                    f'__Detected Extension:__ **TGS** 📷\n__Now send extension to Convert to...__\n\n--**Available formats**-- \n\n__{IMG_TEXT}__\n\n**SPECIAL** 🎁\n__Colorize, Positive, Upscale & Scan__\n\n{message.from_user.mention} __choose or click /cancel to Cancel or use /rename  to  Rename__',
+                    f'__Detected Extension(اكتشاف امتداد):__ **TGS** 📷\n__Now send extension to Convert to(الآن أرسل التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{IMG_TEXT}__\n\n**SPECIAL(خاص)** 🎁\n__Colorize, Positive, Upscale & Scan(تلوين ، إيجابي ، راقي ، مسح ضوئي)__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
                     reply_markup=IMGboard, reply_to_message_id=message.id)
 
 
@@ -1284,7 +1284,7 @@ def text(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 
     # magnet link
     if message.text[:8] == "magnet:?":
-        oldm = app.send_message(message.chat.id,'__Processing...__', reply_to_message_id=message.id) 
+        oldm = app.send_message(message.chat.id,'__Processingالمعالجة...__', reply_to_message_id=message.id) 
         tf = threading.Thread(target=lambda:gettorfile(message,oldm),daemon=True)
         tf.start()
         return
@@ -1297,7 +1297,7 @@ def text(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 
         if "COLOR" == message.text or "POSITIVE" == message.text:
 
-            oldm = app.send_message(message.chat.id,'__Processing__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id) 
+            oldm = app.send_message(message.chat.id,'__Processingالمعالجة__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id) 
             app.delete_messages(message.chat.id,message_ids=[nmessage.id+1])
 
             if "COLOR" in message.text:
@@ -1311,77 +1311,77 @@ def text(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 
         if "READ" == message.text:
             app.delete_messages(message.chat.id,message_ids=[nmessage.id+1])
-            oldm = app.send_message(message.chat.id,'__Reading File__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
+            oldm = app.send_message(message.chat.id,'__Reading File(قراءة الملف)__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
             rf = threading.Thread(target=lambda:readf(nmessage,oldm),daemon=True)
             rf.start()
             return
 
         if "SENDPHOTO" == message.text:
             app.delete_messages(message.chat.id,message_ids=[nmessage.id+1])
-            oldm = app.send_message(message.chat.id,'__Sending in Photo Format__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
+            oldm = app.send_message(message.chat.id,'__Sending in Photo Format(الإرسال بتنسيق الصور)__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
             sp = threading.Thread(target=lambda:sendphoto(nmessage,oldm),daemon=True)
             sp.start()
             return
 
         if "SENDDOC" == message.text:
             app.delete_messages(message.chat.id,message_ids=[nmessage.id+1])
-            oldm = app.send_message(message.chat.id,'__Sending in Document Format__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
+            oldm = app.send_message(message.chat.id,'__Sending in Document Format(الإرسال بتنسيق المستند)__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
             sd = threading.Thread(target=lambda:senddoc(nmessage,oldm),daemon=True)
             sd.start()
             return    
 
         if "SENDVID" == message.text:
             app.delete_messages(message.chat.id,message_ids=[nmessage.id+1])
-            oldm = app.send_message(message.chat.id,'__Sending in Stream Format__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
+            oldm = app.send_message(message.chat.id,'__Sending in Stream Format(الإرسال بتنسيق البث)__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
             sv = threading.Thread(target=lambda:sendvideo(nmessage,oldm),daemon=True)
             sv.start()
             return
 
         if "SpeechToText" == message.text:
             app.delete_messages(message.chat.id,message_ids=[nmessage.id+1])
-            oldm = app.send_message(message.chat.id,'__Transcripting, takes long time for Long Files__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
+            oldm = app.send_message(message.chat.id,'__Transcripting, takes long time for Long Files(النسخ ، يستغرق وقتا طويلا للملفات الطويلة)__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
             stt = threading.Thread(target=lambda:transcript(nmessage,oldm),daemon=True)
             stt.start()
             return
 
         if "TextToSpeech" == message.text:
             app.delete_messages(message.chat.id,message_ids=[nmessage.id+1])
-            oldm = app.send_message(message.chat.id,'__Generating Speech__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
+            oldm = app.send_message(message.chat.id,'__Generating Speech(توليد الكلام)__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
             tts = threading.Thread(target=lambda:speak(nmessage,oldm),daemon=True)
             tts.start()
             return
 
         if "UPSCALE" == message.text:
             app.delete_messages(message.chat.id,message_ids=[nmessage.id+1])
-            oldm = app.send_message(message.chat.id,'__Upscaling Your Image__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
+            oldm = app.send_message(message.chat.id,'__Upscaling Your Image(رفع مستوى صورتك)__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
             upscl = threading.Thread(target=lambda:increaseres(nmessage,oldm),daemon=True)
             upscl.start()
             return
 
         if "EXTRACT" == message.text:
             app.delete_messages(message.chat.id,message_ids=[nmessage.id+1])
-            oldm = app.send_message(message.chat.id,'__Extracting File__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
+            oldm = app.send_message(message.chat.id,'__Extracting File(استخراج ملف)__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
             ex = threading.Thread(target=lambda:extract(nmessage,oldm),daemon=True)
             ex.start()
             return 
 
         if "COMPILE" == message.text:
             app.delete_messages(message.chat.id,message_ids=[nmessage.id+1])
-            oldm = app.send_message(message.chat.id,'__Compiling__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
+            oldm = app.send_message(message.chat.id,'__Compiling(تجميع)__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
             cmp = threading.Thread(target=lambda:compile(nmessage,oldm),daemon=True)
             cmp.start()
             return
 
         if "SCAN" == message.text:
             app.delete_messages(message.chat.id,message_ids=[nmessage.id+1])
-            oldm = app.send_message(message.chat.id,'__Scanning__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
+            oldm = app.send_message(message.chat.id,'__Scanning(مسح)__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
             scn = threading.Thread(target=lambda:scan(nmessage,oldm),daemon=True)
             scn.start()
             return
 
         if "RUN" == message.text:
             app.delete_messages(message.chat.id,message_ids=[nmessage.id+1])
-            oldm = app.send_message(message.chat.id,'__Running__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
+            oldm = app.send_message(message.chat.id,'__Running(تشغيل)__',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=nmessage.id)
             rpro = threading.Thread(target=lambda:runpro(nmessage,oldm),daemon=True)
             rpro.start()
             return
@@ -1433,13 +1433,13 @@ def text(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
         oldext = inputt.split(".")[-1]
 
         #if newext == "ico":
-            #app.send_message(message.chat.id, "Warning: for ICO, image will be resized and made multi-resolution", reply_to_message_id=message.id)
+            #app.send_message(message.chat.id, "Warning(تحذير): for ICO, image will be resized and made multi-resolution(بالنسبة إلى ICO ، سيتم تغيير حجم الصورة وجعلها متعددة الدقة)", reply_to_message_id=message.id)
         
         if oldext.upper() == newext.upper():
-            app.send_message(message.chat.id, "__Nice try, Don't choose same Extension__", reply_to_message_id=nmessage.id, reply_markup=ReplyKeyboardRemove())
+            app.send_message(message.chat.id, "__Nice try, Don't choose same Extension(محاولة جيدة ، لا تختر نفس الامتداد)__", reply_to_message_id=nmessage.id, reply_markup=ReplyKeyboardRemove())
             
         else:
-            msg = app.send_message(message.chat.id, f'Converting from **{oldext.upper()}** to **{newext.upper()}**', reply_to_message_id=nmessage.id, reply_markup=ReplyKeyboardRemove())
+            msg = app.send_message(message.chat.id, f'Converting from(التحويل من) **{oldext.upper()}** to(الى) **{newext.upper()}**', reply_to_message_id=nmessage.id, reply_markup=ReplyKeyboardRemove())
             conv = threading.Thread(target=lambda: follow(nmessage, inputt, newext, oldext, msg), daemon=True)
             conv.start()
 
