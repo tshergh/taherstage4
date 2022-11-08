@@ -205,14 +205,14 @@ PRO_TEXT = helperfunctions.give_name(PRO)
 T3D_TEXT = helperfunctions.give_name(T3D)
 
 
-START_TEXT = f'**Images** 📷 \n__{IMG_TEXT}__\n\n\
-**Videos/Audios** 📹 / 🔊 \n__{VA_TEXT}__\n\n\
-**Documents** 💼 \n__{LBW_TEXT},{LBI_TEXT},{LBC_TEXT}__\n\n\
-**Fonts** 🔤 \n__{FF_TEXT}__\n\n\
-**eBooks** 📚 \n__{EB_TEXT}__\n\n\
-**Archives** 🗄 \n__{ARC_TEXT}__\n\n\
-**Subtitles** 🗯️ \n__{SUB_TEXT}__\n\n\
-**Programming Languages** 👨‍💻 \n__{PRO_TEXT}__\n\n\
-**3D Files** 💠 \n__{T3D_TEXT}__\n\n\
-**Special** 🎁 \n__Colorize, Positive, Upscale, Text-to-Speech, Speech-to-Text, AI Image, AI Video, Scan, Compile & Run__\n\n\
-**Extra** ➕  \n__Play a Game, Save Restricted Content, Torrent <-> Magnet, Time or Date, Maths & Base64__'
+START_TEXT = f'**Images(صور)** 📷 \n__{IMG_TEXT}__\n\n\
+**Videos/Audios(فيديوهات/اصوات)** 📹 / 🔊 \n__{VA_TEXT}__\n\n\
+**Documents(مستندات)** 💼 \n__{LBW_TEXT},{LBI_TEXT},{LBC_TEXT}__\n\n\
+**Fonts(خطوط)** 🔤 \n__{FF_TEXT}__\n\n\
+**eBooks(كتب إلكترونية)** 📚 \n__{EB_TEXT}__\n\n\
+**Archives(أرشيف)** 🗄 \n__{ARC_TEXT}__\n\n\
+**Subtitles(ترجمات)** 🗯️ \n__{SUB_TEXT}__\n\n\
+**Programming Languages(لغات البرمجية)** 👨‍💻 \n__{PRO_TEXT}__\n\n\
+**3D Files(ملفات ثلاثية أبعاد)** 💠 \n__{T3D_TEXT}__\n\n\
+**Special(خاص)** 🎁 \n__Colorize, Positive, Upscale, Text-to-Speech, Speech-to-Text, AI Image, AI Video, Scan, Compile & Runتلوين ، إيجابي ، راقي ، تحويل النص إلى كلام ، تحويل الكلام إلى نص ، صورة AI ، فيديو AI ، مسح ضوئي ، تجميع وتشغيل__\n\n\
+**Extra(إضافي)** ➕  \n__Play a Game, Save Restricted Content, Torrent <-> Magnet, Time or Date, Maths & Base64العب لعبة ، احفظ المحتوى المقيد ، مغناطيس التورنت ، الوقت أو التاريخ ، الرياضيات و Base64__'
