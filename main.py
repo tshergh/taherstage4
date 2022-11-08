@@ -54,11 +54,11 @@ def follow(message,inputt,new,old,oldmessage):
         conlink = helperfunctions.videoinfo(output)
 
         if os.path.exists(output) and os.path.getsize(output) > 0:
-            caption=f'**Source File** : __{srclink}__\n\n**Converted File** : __{conlink}__'
+            caption=f'**Source File(مصدر الملف)** : __{srclink}__\n\n**Converted File(الملف المحول)** : __{conlink}__'
             app.send_chat_action(message.chat.id, enums.ChatAction.UPLOAD_DOCUMENT)
             up(message,output,msg,capt=caption)
         else:
-            app.send_message(message.chat.id,"__Error while Conversion__", reply_to_message_id=message.id)
+            app.send_message(message.chat.id,"__Error while Conversion(خطأ أثناء التحويل)__", reply_to_message_id=message.id)
             
         if os.path.exists(output):
             os.remove(output)   
@@ -76,9 +76,9 @@ def follow(message,inputt,new,old,oldmessage):
 
         if os.path.exists(output) and os.path.getsize(output) > 0:
             app.send_chat_action(message.chat.id, enums.ChatAction.UPLOAD_DOCUMENT)
-            app.send_document(message.chat.id,document=output, force_document=True, caption=f'**Source File** : __{srclink}\n\n**Converted File** : __{conlink}__', reply_to_message_id=message.id)
+            app.send_document(message.chat.id,document=output, force_document=True, caption=f'**Source File(مصدر الملف)** : __{srclink}\n\n**Converted File(الملف المحول)** : __{conlink}__', reply_to_message_id=message.id)
         else:
-            app.send_message(message.chat.id,"__Error while Conversion__", reply_to_message_id=message.id)
+            app.send_message(message.chat.id,"__Error while Conversion(خطأ أثناء التحويل)__", reply_to_message_id=message.id)
 
         if os.path.exists(output):
             os.remove(output) 
@@ -116,15 +116,15 @@ def follow(message,inputt,new,old,oldmessage):
 
             if os.path.exists(output) and os.path.getsize(output) > 0:
                 app.send_chat_action(message.chat.id, enums.ChatAction.UPLOAD_DOCUMENT)
-                app.send_document(message.chat.id,document=output, force_document=True, caption=f'**Source File** : __{srclink}\n\n**Converted File** : __{conlink}__', reply_to_message_id=message.id)
+                app.send_document(message.chat.id,document=output, force_document=True, caption=f'**Source File(مصدر الملف)** : __{srclink}\n\n**Converted File(الملف المحول)** : __{conlink}__', reply_to_message_id=message.id)
             else:
-                app.send_message(message.chat.id,"__Error while Conversion__", reply_to_message_id=message.id)
+                app.send_message(message.chat.id,"__Error while Conversion(خطأ أثناء التحويل)__", reply_to_message_id=message.id)
 
             if os.path.exists(output):
                 os.remove(output) 
             
         else:
-            app.send_message(message.chat.id,"__Only Availble Conversions for Animated Stickers are **GIF, PNG** and **WEBP**__", reply_to_message_id=message.id)
+            app.send_message(message.chat.id,"__Only Availble Conversions for Animated Stickers are(تتوفر فقط التحويلات المتاحة للملصقات المتحركة) **GIF, PNG** and **WEBP**__", reply_to_message_id=message.id)
 
 
     # ebooks
@@ -140,7 +140,7 @@ def follow(message,inputt,new,old,oldmessage):
             app.send_chat_action(message.chat.id, enums.ChatAction.UPLOAD_DOCUMENT)
             app.send_document(message.chat.id, document=output, force_document=True, reply_to_message_id=message.id)
         else:
-            app.send_message(message.chat.id,"__Error while Conversion__", reply_to_message_id=message.id)
+            app.send_message(message.chat.id,"__Error while Conversion(خطأ أثناء التحويل)__", reply_to_message_id=message.id)
             
         if os.path.exists(output):
             os.remove(output) 
@@ -159,7 +159,7 @@ def follow(message,inputt,new,old,oldmessage):
             app.send_chat_action(message.chat.id, enums.ChatAction.UPLOAD_DOCUMENT)
             app.send_document(message.chat.id,document=output, force_document=True, reply_to_message_id=message.id)
         else:
-            app.send_message(message.chat.id,"__Error while Conversion__", reply_to_message_id=message.id)
+            app.send_message(message.chat.id,"__Error while Conversion(خطأ أثناء التحويل)__", reply_to_message_id=message.id)
         
         if os.path.exists(output):
             os.remove(output) 
@@ -179,7 +179,7 @@ def follow(message,inputt,new,old,oldmessage):
             app.send_chat_action(message.chat.id, enums.ChatAction.UPLOAD_DOCUMENT)
             app.send_document(message.chat.id,document=output, force_document=True, reply_to_message_id=message.id)
         else:
-            app.send_message(message.chat.id,"__Error while Conversion__", reply_to_message_id=message.id)
+            app.send_message(message.chat.id,"__Error while Conversion(خطأ أثناء التحويل)__", reply_to_message_id=message.id)
             
         if os.path.exists(output):
             os.remove(output) 
@@ -189,7 +189,7 @@ def follow(message,inputt,new,old,oldmessage):
     elif output.upper().endswith(SUB) and inputt.upper().endswith(SUB):
 
         if not ((old.upper() in ["TTML", "SCC", "SRT"]) and (new.upper() in ["TTML","SRT", "VTT"])):
-            app.send_message(message.chat.id,f"__**{old.upper()}** to **{new.upper()}** is not Supported.\n\n**Supported Formats**\n**Inputs**: TTML, SCC & SRT\n**Outputs**: TTML, SRT & VTT__", reply_to_message_id=message.id)
+            app.send_message(message.chat.id,f"__**{old.upper()}** to(الى) **{new.upper()}** is not Supportedغير مدعم.\n\n**Supported Formats(التنسيقات المدعومة)**\n**Inputs(المدخلات)**: TTML, SCC & SRT\n**Outputs(النواتج)**: TTML, SRT & VTT__", reply_to_message_id=message.id)
 
         else:
             print("It is Subtitles option")
@@ -228,8 +228,8 @@ def follow(message,inputt,new,old,oldmessage):
             lang = new.upper()
 
         if not flag:
-            app.send_message(message.chat.id,f"__**{old.upper()}** to **{new.upper()}** is not Supported.\n\
-            \n**Supported Formats:**\nC -> GO\nPY -> CPP, RS, JL, KT, NIM, DART & GO\nJAVA -> JS & TS__", reply_to_message_id=message.id)
+            app.send_message(message.chat.id,f"__**{old.upper()}** to(الئ) **{new.upper()}** is not Supportedغير مدعم.\n\
+            \n**Supported Formats(تنسيقات المدعومة):**\nC -> GO\nPY -> CPP, RS, JL, KT, NIM, DART & GO\nJAVA -> JS & TS__", reply_to_message_id=message.id)
 
         else:
             print("It is Programs option")
@@ -1454,7 +1454,7 @@ def text(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
                 ots = threading.Thread(target=lambda: other(message), daemon=True)
                 ots.start()
             else:    
-                app.send_message(message.chat.id, '__for Text messages, You can use **/make** to Create a File from it.\n(first line of text will be trancated and used as filename)__', reply_to_message_id=message.id)
+                app.send_message(message.chat.id, '__for Text messagesللرسائل النصية, You can useيمكنك استخدام **/make** to Create a File from it(لإنشاء ملف منه).\n(first line of text will be trancated and used as filename سيتم ترميز السطر الأول من النص واستخدامه كاسم ملف)__', reply_to_message_id=message.id)
             
 
 #apprun
