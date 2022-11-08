@@ -17,7 +17,7 @@ T3D = ('CTM','PLY','STL','3DS','DAE','OBJ','LWO','OFF','WRL')
 
 
 # buttons
-VAboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to",resize_keyboard=True,selective=True)
+VAboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
 VAboard.add(
 ReplyButton('AIFF'),
 ReplyButton('AAC'),
@@ -44,9 +44,9 @@ ReplyButton('SENDDOC'),
 ReplyButton('SpeechToText')
             )    
 
-IMGboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to",resize_keyboard=True,selective=True)
+IMGboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
 IMGboard.add(
-ReplyButton('OCR'),
+ReplyButton('OCR|نص صوره'),
 ReplyButton('ICO'),
 ReplyButton('GIF'),
 ReplyButton('TIFF'),
@@ -56,19 +56,19 @@ ReplyButton('JPEG'),
 ReplyButton('JPG'),
 ReplyButton('PNG'),
 ReplyButton('SVG'),
-ReplyButton('COLOR'),
+ReplyButton('COLOR|اللون'),
 ReplyButton('POSITIVE'),
 ReplyButton('UPSCALE'),
-ReplyButton('SCAN'),
+ReplyButton('SCAN|مسح'),
 ReplyButton('SENDPHOTO'),
 ReplyButton('SENDDOC')
             )
 
-LBWboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to",resize_keyboard=True,selective=True)
+LBWboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
 LBWboard.add(
 ReplyButton('ODT'),
-ReplyButton('DOC'),
-ReplyButton('DOCX'),
+ReplyButton('DOC(وورد)'),
+ReplyButton('DOCX(وورد)'),
 ReplyButton('DOTX'),
 ReplyButton('PDF'),
 ReplyButton('XML'),
@@ -78,10 +78,10 @@ ReplyButton('WPS'),
 ReplyButton('OTT'),
 ReplyButton('TXT'),
 ReplyButton('READ'),
-ReplyButton('TextToSpeech')
+ReplyButton('TextToSpeech(نص الى كلام)')
             )
 
-LBIboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to",resize_keyboard=True,selective=True)
+LBIboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
 LBIboard.add(
 ReplyButton('ODP'),
 ReplyButton('PPT'),
@@ -98,7 +98,7 @@ ReplyButton('XML'),
 ReplyButton('PDF')
             )
 
-LBCboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to",resize_keyboard=True,selective=True)
+LBCboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
 LBCboard.add(
 ReplyButton('ODS'),
 ReplyButton('XLS'),
@@ -114,7 +114,7 @@ ReplyButton('CSV'),
 ReplyButton('XLM')
             )       
 
-FFboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to",resize_keyboard=True,selective=True)
+FFboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
 FFboard.add(
 ReplyButton('SFD'),
 ReplyButton('BDF'),
@@ -128,7 +128,7 @@ ReplyButton('UFO'),
 ReplyButton('WOFF')
             )
 
-EBboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to",resize_keyboard=True,selective=True)
+EBboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
 EBboard.add(           
 ReplyButton('EPUB'),
 ReplyButton('MOBI'),
@@ -143,13 +143,13 @@ ReplyButton('PDF'),
 ReplyButton('TXT')
             )
 
-ARCboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to",resize_keyboard=True,selective=True)
+ARCboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
 ARCboard.add(           
-ReplyButton('EXTRACT'),
+ReplyButton('EXTRACT|مقتطف'),
             )
 
 
-SUBboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to",resize_keyboard=True,selective=True)
+SUBboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
 SUBboard.add(           
 ReplyButton("TTML"), 
 #ReplyButton("SCC"),
@@ -157,7 +157,7 @@ ReplyButton("SRT"),
 ReplyButton("VTT")
             )
 
-PROboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to",resize_keyboard=True,selective=True)
+PROboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
 PROboard.add(           
 #ReplyButton('C'), 
 ReplyButton('CPP'),
@@ -172,12 +172,12 @@ ReplyButton('GO'),
 ReplyButton('TS'),
 ReplyButton('JS'),
 #ReplyButton('JAR'),
-ReplyButton('READ'),
+ReplyButton('READ|قراءه'),
 ReplyButton('COMPILE'),
 ReplyButton('RUN')
             )
 
-T3Dboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to",resize_keyboard=True,selective=True)
+T3Dboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
 T3Dboard.add(           
 ReplyButton('CTM'), 
 ReplyButton('PLY'),
@@ -215,4 +215,4 @@ START_TEXT = f'**Images(صور)** 📷 \n__{IMG_TEXT}__\n\n\
 **Programming Languages(لغات البرمجية)** 👨‍💻 \n__{PRO_TEXT}__\n\n\
 **3D Files(ملفات ثلاثية أبعاد)** 💠 \n__{T3D_TEXT}__\n\n\
 **Special(خاص)** 🎁 \n__Colorize, Positive, Upscale, Text-to-Speech, Speech-to-Text, AI Image, AI Video, Scan, Compile & Runتلوين ، إيجابي ، راقي ، تحويل النص إلى كلام ، تحويل الكلام إلى نص ، صورة AI ، فيديو AI ، مسح ضوئي ، تجميع وتشغيل__\n\n\
-**Extra(إضافي)** ➕  \n__Play a Game, Save Restricted Content, Torrent <-> Magnet, Time or Date, Maths & Base64العب لعبة ، احفظ المحتوى المقيد ، مغناطيس التورنت ، الوقت أو التاريخ ، الرياضيات و Base64__'
+**Extra(إضافي)** ➕  \n__Play a Game, Save Restricted Content, Torrent <-> Magnet, Time or Date, Maths & Base64العب لعبة ، احفظ المحتوى المقيد ، مغناطيس التورنت ، الوقت أو التاريخ ، الرياضيات و Base64\n\n\بوت للتعديل على PDF: @i2pdfbot__'
