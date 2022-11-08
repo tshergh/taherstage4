@@ -46,7 +46,7 @@ ReplyButton('SpeechToText')
 
 IMGboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
 IMGboard.add(
-ReplyButton('OCR|نص صوره'),
+ReplyButton('OCR'),
 ReplyButton('ICO'),
 ReplyButton('GIF'),
 ReplyButton('TIFF'),
@@ -56,10 +56,10 @@ ReplyButton('JPEG'),
 ReplyButton('JPG'),
 ReplyButton('PNG'),
 ReplyButton('SVG'),
-ReplyButton('COLOR|اللون'),
+ReplyButton('COLOR'),
 ReplyButton('POSITIVE'),
 ReplyButton('UPSCALE'),
-ReplyButton('SCAN|مسح'),
+ReplyButton('SCAN'),
 ReplyButton('SENDPHOTO'),
 ReplyButton('SENDDOC')
             )
@@ -67,8 +67,8 @@ ReplyButton('SENDDOC')
 LBWboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
 LBWboard.add(
 ReplyButton('ODT'),
-ReplyButton('DOC(وورد)'),
-ReplyButton('DOCX(وورد)'),
+ReplyButton('DOC'),
+ReplyButton('DOCX'),
 ReplyButton('DOTX'),
 ReplyButton('PDF'),
 ReplyButton('XML'),
@@ -78,7 +78,7 @@ ReplyButton('WPS'),
 ReplyButton('OTT'),
 ReplyButton('TXT'),
 ReplyButton('READ'),
-ReplyButton('TextToSpeech(نص الى كلام)')
+ReplyButton('TextToSpeech')
             )
 
 LBIboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
@@ -145,7 +145,7 @@ ReplyButton('TXT')
 
 ARCboard = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="convert to|حول الى",resize_keyboard=True,selective=True)
 ARCboard.add(           
-ReplyButton('EXTRACT|مقتطف'),
+ReplyButton('EXTRACT'),
             )
 
 
@@ -172,7 +172,7 @@ ReplyButton('GO'),
 ReplyButton('TS'),
 ReplyButton('JS'),
 #ReplyButton('JAR'),
-ReplyButton('READ|قراءه'),
+ReplyButton('READ'),
 ReplyButton('COMPILE'),
 ReplyButton('RUN')
             )
