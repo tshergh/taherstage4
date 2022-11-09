@@ -1105,49 +1105,49 @@ def documnet(client: pyrogram.client.Client, message: pyrogram.types.messages_an
     # VID / AUD
     if message.document.file_name.upper().endswith(VIDAUD):
         app.send_message(message.chat.id,
-                         f'__Detected Extension(الملحق  مكشوف):__ **{dext}** 📹 / 🔊\n__Now send extension to Convert to(أرسل الآن التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{VA_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                         f'__Detected Extension(نوع ملف):__ **{dext}** 📹 / 🔊\n__Now send extension to Convert to...\nأرسل الآن التمديد للتحويل إلى...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{VA_TEXT}__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                          reply_markup=VAboard, reply_to_message_id=message.id)
 
     # IMG
     elif message.document.file_name.upper().endswith(IMG):
         app.send_message(message.chat.id,
-                         f'__Detected Extension(الملحق  مكشوف):__ **{dext}** 📷\n__Now send extension to Convert to(أرسل الآن التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{IMG_TEXT}__\n\n**SPECIAL** 🎁\n__Colorize, Positive, Upscale & Scan__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                         f'__Detected Extension(نوع ملف):__ **{dext}** 📷\n__Now send extension to Convert to...\nأرسل الآن التمديد للتحويل إلى...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{IMG_TEXT}__\n\n**SPECIAL(خاصة)** 🎁\n__Colorize, Positive, Upscale & Scan(لم يتم العثور على تحويلات AvaiColorize ، إيجابية ، راقية وقابلة للمسح الضوئي.)__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                          reply_markup=IMGboard, reply_to_message_id=message.id)
 
     # LBW
     elif message.document.file_name.upper().endswith(LBW):
         app.send_message(message.chat.id,
-                         f'__Detected Extension(الملحق  مكشوف):__ **{dext}** 💼 \n__Now send extension to Convert to(أرسل الآن التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{LBW_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                         f'__Detected Extension(نوع ملف):__ **{dext}** 💼 \n__Now send extension to Convert to...\nأرسل الآن التمديد للتحويل إلى...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{LBW_TEXT}__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                          reply_markup=LBWboard, reply_to_message_id=message.id)
 
     # LBC
     elif message.document.file_name.upper().endswith(LBC):
         app.send_message(message.chat.id,
-                         f'__Detected Extension(الملحق  مكشوف):__ **{dext}** 💼 \n__Now send extension to Convert to(أرسل الآن التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{LBC_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                         f'__Detected Extension(نوع ملف):__ **{dext}** 💼 \n__Now send extension to Convert to...\nأرسل الآن التمديد للتحويل إلى...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{LBC_TEXT}__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                          reply_markup=LBCboard, reply_to_message_id=message.id)
 
     # LBI
     elif message.document.file_name.upper().endswith(LBI):
         app.send_message(message.chat.id,
-                         f'__Detected Extension(الملحق  مكشوف):__ **{dext}** 💼 \n__Now send extension to Convert to(أرسل الآن التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{LBI_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                         f'__Detected Extension(نوع ملف):__ **{dext}** 💼 \n__Now send extension to Convert to...\nأرسل الآن التمديد للتحويل إلى...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{LBI_TEXT}__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                          reply_markup=LBIboard, reply_to_message_id=message.id)
 
     # FF
     elif message.document.file_name.upper().endswith(FF):
         app.send_message(message.chat.id,
-                         f'__Detected Extension(الملحق  مكشوف):__ **{dext}** 🔤 \n__Now send extension to Convert to(أرسل الآن التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{FF_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                         f'__Detected Extension(نوع ملف):__ **{dext}** 🔤 \n__Now send extension to Convert to...\nأرسل الآن التمديد للتحويل إلى...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{FF_TEXT}__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                          reply_markup=FFboard, reply_to_message_id=message.id)
 
     # EB
     elif message.document.file_name.upper().endswith(EB):
         app.send_message(message.chat.id,
-                         f'__Detected Extension(الملحق  مكشوف):__ **{dext}** 📚 \n__Now send extension to Convert to(أرسل الآن التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{EB_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                         f'__Detected Extension(نوع ملف):__ **{dext}** 📚 \n__Now send extension to Convert to...\nأرسل الآن التمديد للتحويل إلى...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{EB_TEXT}__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                          reply_markup=EBboard, reply_to_message_id=message.id)
     
     # ARC
     elif message.document.file_name.upper().endswith(ARC):
         app.send_message(message.chat.id,
-                         f'__Detected Extension(الملحق  مكشوف):__ **{dext}** 🗄\n__Do you want to Extract ?__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                         f'__Detected Extension(نوع ملف):__ **{dext}** 🗄\n__Do you want to Extract ?__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                          reply_markup=ARCboard, reply_to_message_id=message.id)
 
     # TOR
@@ -1161,31 +1161,31 @@ def documnet(client: pyrogram.client.Client, message: pyrogram.types.messages_an
     # SUB
     elif message.document.file_name.upper().endswith(SUB):
         app.send_message(message.chat.id,
-                         f'__Detected Extension(الملحق  مكشوف):__ **{dext}** 🗯️ \n__Now send extension to Convert to(أرسل الآن التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{SUB_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                         f'__Detected Extension(نوع ملف):__ **{dext}** 🗯️ \n__Now send extension to Convert to...\nأرسل الآن التمديد للتحويل إلى...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{SUB_TEXT}__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                          reply_markup=SUBboard, reply_to_message_id=message.id)
 
     # PRO
     elif message.document.file_name.upper().endswith(PRO):
         app.send_message(message.chat.id,
-                         f'__Detected Extension(الملحق  مكشوف):__ **{dext}** 👨‍💻 \n__Now send extension to Convert to(أرسل الآن التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{PRO_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                         f'__Detected Extension(نوع ملف):__ **{dext}** 👨‍💻 \n__Now send extension to Convert to...\nأرسل الآن التمديد للتحويل إلى...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{PRO_TEXT}__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                          reply_markup=PROboard, reply_to_message_id=message.id)
     
     # T3D
     elif message.document.file_name.upper().endswith(T3D):
         app.send_message(message.chat.id,
-                         f'__Detected Extension(الملحق  مكشوف):__ **{dext}** 💠 \n__Now send extension to Convert to(أرسل الآن التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{T3D_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                         f'__Detected Extension(نوع ملف):__ **{dext}** 💠 \n__Now send extension to Convert to...\nأرسل الآن التمديد للتحويل إلى...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{T3D_TEXT}__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                          reply_markup=T3Dboard, reply_to_message_id=message.id)
 
     # else
     else:
-        app.send_message(message.chat.id,'__No Available Conversions found.\n\nYou can use:__\n**/rename new-filename (اسم ملف جديد)** __to Rename__\n**/read** __to Read the File(لقراءة الملف)__')
+        app.send_message(message.chat.id,'__No Available Conversions found(لا توجد تحويلات متوفرة.).\n\nYou can use(يمكنك استخدام):__\n**/rename new-filename (اسم ملف جديد)** __to Rename__\n**/read** __to Read the File(لقراءة الملف)__')
     
 
 
 # animation
 @app.on_message(filters.animation)
 def annimations(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
-    oldm = app.send_message(message.chat.id,'**Turning it into Document then you can use that to Convert(تحويله إلى مستند ثم يمكنك استخدامه للتحويل)(تحويله إلى مستند ثم يمكنك استخدامه للتحويل)**',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=message.id)
+    oldm = app.send_message(message.chat.id,'**Turning it into Document then you can use that to Convert(تحويله إلى مستند ثم يمكنك استخدامه للتحويل)**',reply_markup=ReplyKeyboardRemove(), reply_to_message_id=message.id)
     sd = threading.Thread(target=lambda:senddoc(message,oldm),daemon=True)
     sd.start()
 
@@ -1200,14 +1200,14 @@ def video(client: pyrogram.client.Client, message: pyrogram.types.messages_and_m
                 pickle.dump(message, handle)
             dext = message.video.file_name.split(".")[-1].upper()
             app.send_message(message.chat.id,
-                            f'__Detected Extension(الملحق  مكشوف):__ **{dext}** 📹 / 🔊\n__Now send extension to Convert to(أرسل الآن التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{VA_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                            f'__Detected Extension(نوع ملف):__ **{dext}** 📹 / 🔊\n__Now send extension to Convert to...\nأرسل الآن التمديد للتحويل إلى...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{VA_TEXT}__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                             reply_markup=VAboard, reply_to_message_id=message.id)
         else:
             app.send_message(message.chat.id, f'--**Available formats(التنسيقات المتوفرة)**--:\n\n**VIDEOS/AUDIOS(مقاطع فيديو / صوتيات)** 📹 / 🔊\n__{VA_TEXT}__',
                             reply_to_message_id=message.id)
    
     except:
-        oldm = app.send_message(message.chat.id,'**Turning it into Document then you can use that to Convert(تحويله إلى مستند ثم يمكنك استخدامه للتحويل)(تحويله إلى مستند ثم يمكنك استخدامه للتحويل)**',reply_markup=ReplyKeyboardRemove())
+        oldm = app.send_message(message.chat.id,'**Turning it into Document then you can use that to Convert(تحويله إلى مستند ثم يمكنك استخدامه للتحويل)**',reply_markup=ReplyKeyboardRemove())
         sd = threading.Thread(target=lambda:senddoc(message,oldm),daemon=True)
         sd.start()
 
@@ -1218,7 +1218,7 @@ def videonote(client: pyrogram.client.Client, message: pyrogram.types.messages_a
     with open(f'{message.from_user.id}.json', 'wb') as handle:
         pickle.dump(message, handle)
     app.send_message(message.chat.id,
-                f'__Detected Extension(الملحق  مكشوف):__ **MP4** 📹 / 🔊\n__Now send extension to Convert to(أرسل الآن التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{VA_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                f'__Detected Extension(نوع ملف):__ **MP4** 📹 / 🔊\n__Now send extension to Convert to...\nأرسل الآن التمديد للتحويل إلى...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{VA_TEXT}__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                 reply_markup=VAboard, reply_to_message_id=message.id)
 
 
@@ -1230,7 +1230,7 @@ def audio(client: pyrogram.client.Client, message: pyrogram.types.messages_and_m
             pickle.dump(message, handle)
         dext = message.audio.file_name.split(".")[-1].upper()
         app.send_message(message.chat.id,
-                         f'__Detected Extension(الملحق  مكشوف):__ **{dext}** 📹 / 🔊\n__Now send extension to Convert to(أرسل الآن التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{VA_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                         f'__Detected Extension(نوع ملف):__ **{dext}** 📹 / 🔊\n__Now send extension to Convert to...\nأرسل الآن التمديد للتحويل إلى...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{VA_TEXT}__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                          reply_markup=VAboard, reply_to_message_id=message.id)
     else:
         app.send_message(message.chat.id, f'--**Available formats(التنسيقات المتوفرة)**--:\n\n**VIDEOS/AUDIOS(مقاطع فيديو / صوتيات)** 📹 / 🔊 \n__{VIDAUD}__',
@@ -1243,7 +1243,7 @@ def voice(client: pyrogram.client.Client, message: pyrogram.types.messages_and_m
     with open(f'{message.from_user.id}.json', 'wb') as handle:
         pickle.dump(message, handle)
     app.send_message(message.chat.id,
-                f'__Detected Extension(اكتشاف امتداد):__ **OGG** 📹 / 🔊\n__Now send extension to Convert to(أرسل الآن التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{VA_TEXT}__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                f'__Detected Extension(اكتشاف امتداد):__ **OGG** 📹 / 🔊\n__Now send extension to Convert to...\nأرسل الآن التمديد للتحويل إلى...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{VA_TEXT}__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                 reply_markup=VAboard, reply_to_message_id=message.id)
 
 
@@ -1253,7 +1253,7 @@ def photo(client: pyrogram.client.Client, message: pyrogram.types.messages_and_m
     with open(f'{message.from_user.id}.json', 'wb') as handle:
         pickle.dump(message, handle)
     app.send_message(message.chat.id,
-                     f'__Detected Extension(اكتشاف امتداد):__ **JPG** 📷\n__Now send extension to Convert to(الآن أرسل التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{IMG_TEXT}__\n\n**SPECIAL(خاص)** 🎁\n__Colorize, Positive, Upscale & Scan(تلوين ، إيجابي ، راقي ، مسح ضوئي)__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                     f'__Detected Extension(اكتشاف امتداد):__ **JPG** 📷\n__Now send extension to Convert to(الآن أرسل التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{IMG_TEXT}__\n\n**SPECIAL(خاص)** 🎁\n__Colorize, Positive, Upscale & Scan(تلوين ، إيجابي ، راقي ، مسح ضوئي)__\n\n __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                      reply_markup=IMGboard, reply_to_message_id=message.id)
 
 
@@ -1264,11 +1264,11 @@ def sticker(client: pyrogram.client.Client, message: pyrogram.types.messages_and
             pickle.dump(message, handle)
     if not message.sticker.is_animated and not message.sticker.is_video:
         app.send_message(message.chat.id,
-                     f'__Detected Extension(اكتشاف امتداد):__ **WEBP** 📷\n__Now send extension to Convert to(الآن أرسل التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{IMG_TEXT}__\n\n**SPECIAL(خاص)** 🎁\n__Colorize, Positive, Upscale & Scan(تلوين ، إيجابي ، راقي ، مسح ضوئي)__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                     f'__Detected Extension(اكتشاف امتداد):__ **WEBP** 📷\n__Now send extension to Convert to(الآن أرسل التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{IMG_TEXT}__\n\n**SPECIAL(خاص)** 🎁\n__Colorize, Positive, Upscale & Scan(تلوين ، إيجابي ، راقي ، مسح ضوئي)__\n\n{message.from_user.mention} __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                      reply_markup=IMGboard, reply_to_message_id=message.id)
     else:
         app.send_message(message.chat.id,
-                    f'__Detected Extension(اكتشاف امتداد):__ **TGS** 📷\n__Now send extension to Convert to(الآن أرسل التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{IMG_TEXT}__\n\n**SPECIAL(خاص)** 🎁\n__Colorize, Positive, Upscale & Scan(تلوين ، إيجابي ، راقي ، مسح ضوئي)__\n\n{message.from_user.mention} __choose or click(اختر أو انقر) /cancel to Cancel or use(للإلغاء أو الاستخدام) /rename  to  Rename(لإعادة التسمية)__',
+                    f'__Detected Extension(اكتشاف امتداد):__ **TGS** 📷\n__Now send extension to Convert to(الآن أرسل التمديد للتحويل إلى)...__\n\n--**Available formats(التنسيقات المتوفرة)**-- \n\n__{IMG_TEXT}__\n\n**SPECIAL(خاص)** 🎁\n__Colorize, Positive, Upscale & Scan(تلوين ، إيجابي ، راقي ، مسح ضوئي)__\n\n{message.from_user.mention} __/cancel to cancel(لإلغاء)\n/rename to rename(لاعادة التسمية)__',
                     reply_markup=IMGboard, reply_to_message_id=message.id)
 
 
